@@ -26,7 +26,7 @@ InboxScreen::InboxScreen() : LVScreen(), apop(this){
 			static_cast<LVScreen*>(lv_event_get_user_data(event))->push(screen);
 		}, LV_EVENT_PRESSED, this);
 		auto label = lv_label_create(obj);
-		lv_label_set_text(label, "You don't have any friends added yet.\n\nPress ENTER to pair with a friend.");
+		lv_label_set_text(label, "no friends? L");
 		lv_label_set_long_mode(label, LV_LABEL_LONG_WRAP);
 		lv_obj_set_style_text_color(label, lv_color_white(), 0);
 		lv_obj_set_style_text_font(label, &pixelbasic7, 0);
